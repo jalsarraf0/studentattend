@@ -1,18 +1,31 @@
+# attendance-checker-system
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+A list of things happening in this app:
 
+* we provide express service endpoints using HTTP
+* we utilize Mongoose to communicate with a MongoDb database
 
-Hi there! Welcome to Cloud9 IDE!
+## Tutorials and Things to remember:
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
+* install MongoDB on C9: [here](https://community.c9.io/t/setting-up-mongodb/1717)
+* update MongoDB on C9 to 3.x: [here](https://community.c9.io/t/updating-mongodb/3914)
 
-Happy coding!
-The Cloud9 IDE team
+The commands in the update tutorial should be changed as follows: 
+
+```
+sudo apt-get remove mongodb-org mongodb-org-server
+
+sudo apt-get autoremove
+
+sudo rm -rf /usr/bin/mongo*
+
+echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
+
+sudo apt-get update
+
+sudo apt-get install mongodb-org mongodb-org-server
+
+sudo touch /etc/init.d/mongod
+
+sudo apt-get install mongodb-org-server
+```# airplane-express
